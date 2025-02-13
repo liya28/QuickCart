@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grocery List"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_below="@id/title"
+        android:layout_marginTop="7dp"
+        android:layout_alignRight="@id/title"
+        android:layout_alignLeft="@id/title" />
+
+    <LinearLayout
+        android:id="@+id/switchtab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All List"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins"
+            android:textSize="22sp"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_below="@id/switchtab"
+            android:layout_alignRight="@id/switchtab"
+            android:layout_alignLeft="@id/switchtab" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Favorites"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_below="@id/switchtab"
+        android:layout_alignRight="@id/switchtab"
+        android:layout_alignLeft="@id/switchtab" />
+
+    <RelativeLayout
+        android:id="@+id/list1_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/switchtab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/corner"
+        android:layout_alignRight="@+id/switchtab"
+        android:layout_alignLeft="@id/switchtab">
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="260dp"
+            android:contentDescription="Favorite"
+            android:layout_centerVertical="true"
+            android:src="@drawable/star_icon" />
+
+        <TextView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="29dp"
+            android:paddingLeft="20dp"
+            android:text="Grocery 1"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list2_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/list1_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/corner"
+        android:layout_alignRight="@+id/switchtab"
+        android:layout_alignLeft="@id/switchtab">
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="260dp"
+            android:contentDescription="Favorite"
+            android:layout_centerVertical="true"
+            android:src="@drawable/star_icon" />
+
+        <TextView
+            android:id="@+id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="29dp"
+            android:paddingLeft="20dp"
+            android:text="Grocery 2"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list3_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/list2_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/corner"
+        android:layout_alignRight="@+id/switchtab"
+        android:layout_alignLeft="@id/switchtab">
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="260dp"
+            android:contentDescription="Favorite"
+            android:layout_centerVertical="true"
+            android:src="@drawable/star_icon" />
+
+        <TextView
+            android:id="@+id/list3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="29dp"
+            android:paddingLeft="20dp"
+            android:text="Grocery 3"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list3_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppins"
+        android:text="My Profile"
+        android:textSize="16sp" />
+</RelativeLayout>

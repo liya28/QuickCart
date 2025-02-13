@@ -27,7 +27,7 @@
             />
 
         <EditText
-            android:id="@+id/text_username"
+            android:id="@+id/edit_username"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
@@ -41,13 +41,13 @@
             android:textColor="#808080"/>
 
         <EditText
-            android:id="@+id/text_password"
+            android:id="@+id/edit_password"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/rectangle"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/text_username"
+            android:layout_below="@+id/edit_username"
             android:hint=" Password"
             android:fontFamily="@font/poppins_light"
             android:textStyle="bold"
@@ -56,13 +56,13 @@
             />
 
         <EditText
-            android:id="@+id/text_confirmpass"
+            android:id="@+id/edit_confirmpass"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/rectangle"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/text_password"
+            android:layout_below="@+id/edit_password"
             android:hint=" Confirm Password"
             android:fontFamily="@font/poppins_light"
             android:textStyle="bold"
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/text_confirmpass"
+            android:layout_below="@+id/edit_confirmpass"
             android:layout_marginTop="30dp"
             android:background="@color/white"
             android:padding="10dp"
